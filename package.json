@@ -1,0 +1,30 @@
+{
+  "name": "recipefinder",
+  "version": "1.0.0",
+  "description": "",
+  "browserlist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrairieWaltz/recipe_finder_demo.git"
+  },
+  "author": "PW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrairieWaltz/recipe_finder_demo/issues"
+  },
+  "homepage": "https://github.com/PrairieWaltz/recipe_finder_demo#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "fracty": "^1.0.11"
+  }
+}

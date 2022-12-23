@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "cc",
+    "body": ["console.log()"],
+    "description": "Log output to console"
+  }
+}
