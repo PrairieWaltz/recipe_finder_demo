@@ -22,9 +22,11 @@
   "homepage": "https://github.com/PrairieWaltz/recipe_finder_demo#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "core-js": "^3.26.1",
     "parcel": "^2.8.2"
   },
   "dependencies": {
-    "fracty": "^1.0.11"
+    "fracty": "^1.0.11",
+    "regenerator-runtime": "^0.13.11"
   }
 }
