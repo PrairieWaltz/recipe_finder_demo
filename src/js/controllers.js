@@ -22,12 +22,13 @@ const controlRecipes = async function () {
     recipeView.renderSpinner();
     // Update selected search result in DOM
     resultsView.update(model.getSearchResultsPage());
+    // Update Bookmark View
     bookmarksView.update(model.state.bookmarks);
-
     await model.loadRecipe(id);
     recipeView.render(model.state.recipe);
   } catch (err) {
     recipeView.renderError();
+    console.log(err);
   }
 };
 
@@ -75,7 +76,12 @@ const controlAddBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
