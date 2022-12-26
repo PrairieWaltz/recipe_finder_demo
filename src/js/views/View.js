@@ -67,7 +67,7 @@ export default class View {
             <use href="${icons}#icon-alert-triangle"></use>
           </svg>
         </div>
-      <p>${message} | Please try again!</p>
+      <p>${message} | Thanks for using Sporkify!</p>
     </div>
     `;
     this._clear();
@@ -82,7 +82,7 @@ export default class View {
             <use href="${icons}#icon-smile"></use>
           </svg>
         </div>
-      <p>${message} | Please try again!</p>
+      <p>${message}</p>
     </div>
     `;
     this._clear();
