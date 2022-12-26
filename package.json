@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "browserlist": "> 0.5%, last 2 versions, not dead",
+  "default": "index.html",
   "targets": {
     "main": false
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
